@@ -1,0 +1,38 @@
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible",content="IE=edge")
+		meta(name="viewport",content="width=device-width, initial-scale=1")
+		title 帅帅的聊天小屋
+		link(href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css",rel="stylesheet")
+	body.container-fluid
+	nav.navbar.navbar-inverse.navbar-fixed-top
+		div.container
+			div.navbar-header
+				button.navbar-toggle.collapsed(data-toggle="collapse",data-target="#navbar",aria-expander="false" aria-controls="navbar")
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand 帅帅的小屋
+		div.collapse.navbar-collapse
+			ul.nav.navbar-nav
+	div.wrapper(style="margin-top:50px;")
+	
+	nav.navbar.navbar-default.navbar-fixed-bottom
+		div.row(style="margin-top:8px;margin-left:2px;")
+			div.col-xs-2(style="margin-right:2px;")
+				i.glyphicon.glyphicon-camera(style="font-size:34px;")
+			div.col-xs-7
+				input.form-control#msg-content
+			div.col-xs-2
+				button.btn.btn-primary#send-message 发送
+		
+
+
+	script("src=//cdn.bootcss.com/jquery/1.12.4/jquery.min.js")
+	script("src=//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js")
+	script("src=/socket.io-client/dist/socket.io.js")
+	script("src=//cdn.bootcss.com/layer/3.1.0/layer.js")
+	script("src=/client-app.js")
